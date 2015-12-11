@@ -1,12 +1,113 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.android.medicator1.SymptomsScreen">
+<ScrollView
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    >
+    <RelativeLayout
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.example.android.medicator1.SymptomsScreen">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Check all the Symptoms which apply - "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:id="@+id/textView" />
 
-</RelativeLayout>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Headache"
+        android:id="@+id/headachecheckBox"
+        android:layout_below="@id/textView"
+        android:textSize="30sp"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excessive Sweating"
+        android:id="@+id/ESweatingcheckBox"
+        android:layout_below="@id/headachecheckBox"
+        android:textSize="30sp"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="High Fever"
+        android:id="@+id/HFevercheckBox"
+        android:layout_below="@id/ESweatingcheckBox"
+        android:textSize="30sp"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nausea"
+        android:id="@+id/nauseacheckBox"
+        android:layout_below="@id/HFevercheckBox"
+        android:textSize="30sp"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shaking Chills"
+        android:id="@+id/chillscheckBox"
+        android:layout_below="@id/nauseacheckBox"
+        android:textSize="30sp"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vomiting"
+        android:id="@+id/vomitcheckBox"
+        android:layout_below="@id/chillscheckBox"
+        android:textSize="30sp"
+        />
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diarrhea"
+            android:id="@+id/diarrheacheckBox"
+            android:layout_below="@id/vomitcheckBox"
+            android:textSize="30sp"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anemia"
+            android:id="@+id/anemiacheckBox"
+            android:layout_below="@id/diarrheacheckBox"
+            android:textSize="30sp"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muscle Pain"
+            android:id="@+id/musclepaincheckBox"
+            android:layout_below="@id/anemiacheckBox"
+            android:textSize="30sp"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Stools"
+            android:id="@+id/bloodstoolcheckBox"
+            android:layout_below="@id/musclepaincheckBox"
+            android:textSize="30sp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="25sp"
+            android:text="submit"
+            android:id="@+id/submitbutton"
+            />
+    </RelativeLayout>
+</ScrollView>
